@@ -1,0 +1,68 @@
+{{!-- <!DOCTYPE html>
+<html>
+    <head>
+        <title>{{title}}</title>
+        <link rel="stylesheet" href="css/styles.css"/> <!-- static path for public folder is already set in app.js -->
+    </head>
+    <body>
+        <div class="main-content">
+            {{>header}}
+            <article class="widget">
+                <form class="weatherLocation"><input placeholder="location..." type = "text"/><button>Search</button>
+                </form>
+                <div class="weatherIcon"><i class="wi wi-day-cloudy"></i></div>
+                <div class="weatherInfo">
+                    <div class="temperature"><span></span></div>
+                    <div class="description">    
+                        <div class="weatherCondition"></div>    
+                        <div class="place"></div>
+                    </div>
+                </div>
+                <div class="date"></div>
+            </article>
+        </div>
+        <script src="js/app.js"></script> <!-- absolute path -->
+    </body>
+</html> --}}
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>{{title}}</title>
+  <link rel="stylesheet" href="css/styles.css"/>
+  <!-- Fonts & Weather Icons -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="main-content">
+    {{>header}}
+
+    <article class="widget">
+      <!-- Search Form -->
+      <form class="weatherLocation">
+        <input class="search-input" placeholder="Enter location..." type="text" />
+        <button class="search-button">Search</button>
+      </form>
+
+      <!-- Weather Icon -->
+      <div class="weatherIcon">
+        <i class="wi wi-day-cloudy"></i>
+      </div>
+
+      <!-- Weather Info -->
+      <div class="weatherInfo">
+        <div class="temperature"><span></span></div>
+        <div class="description">    
+          <div class="weatherCondition"></div>    
+          <div class="place"></div>
+        </div>
+      </div>
+
+      <!-- Date -->
+      <div class="date"></div>
+    </article>
+  </div>
+
+  <script src="js/app.js"></script>
+</body>
+</html>
